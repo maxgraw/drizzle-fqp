@@ -1,0 +1,26 @@
+{
+  "name": "drizzle-fqp",
+  "module": "index.ts",
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Max Graw",
+    "email": "github@maxgraw.com"
+  },
+  "scripts": {
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "chevrotain": "^11.0.3",
+    "drizzle-orm": "^0.28.6"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  }
+}
