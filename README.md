@@ -1,1 +1,3 @@
-# drizzle-fqp
+# Drizzle Filter Query Parser
+
+# IN DEVELOPMENT
