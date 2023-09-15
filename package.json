@@ -1,12 +1,14 @@
 {
   "name": "drizzle-fqp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "author": {
     "name": "Max Graw",
     "email": "github@maxgraw.com"
   },
   "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "release": "bun run build && changeset publish",
     "lint": "tsc"
   },
   "dependencies": {
@@ -14,12 +16,15 @@
     "drizzle-orm": "^0.28.6"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "bun-types": "latest",
+    "tsup": "^7.2.0",
     "typescript": "^5.0.0"
   },
   "exports": {
-    ".": "./src/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   }
 }
