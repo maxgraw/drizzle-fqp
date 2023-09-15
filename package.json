@@ -7,7 +7,7 @@
     "email": "github@maxgraw.com"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts",
+    "build": "bun run build.js",
     "release": "bun run build && changeset publish",
     "lint": "tsc"
   },
@@ -17,8 +17,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "bun-types": "latest",
-    "tsup": "^7.2.0",
+    "bun-plugin-dts": "^0.2.0",
     "typescript": "^5.0.0"
   },
   "exports": {
