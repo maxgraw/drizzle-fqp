@@ -1,6 +1,5 @@
 {
   "name": "drizzle-fqp",
-  "module": "index.ts",
   "version": "0.0.0",
   "type": "module",
   "author": {
