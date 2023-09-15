@@ -1,5 +1,11 @@
 # drizzle-fqp
 
+## 0.0.3
+
+### Patch Changes
+
+- e297b37: switch to bun builder
+
 ## 0.0.2
 
 ### Patch Changes
