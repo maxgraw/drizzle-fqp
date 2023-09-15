@@ -12,6 +12,9 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
+    permissions:
+      contents: write
+      pull-requests: write
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
