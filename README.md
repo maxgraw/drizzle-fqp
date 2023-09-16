@@ -1,10 +1,10 @@
-# Drizzle Filter Query Parser
+# Drizzle ORM Filter Query Parser
 
 String Parser for [Drizzle Filter](https://orm.drizzle.team/docs/operators).
 
 ## API
 ```js
-import { parseQueryString } from "drizzle-fqp"
+import { parseQueryString } from "drizzle-orm-fqp"
 import { user } from "./schema.ts"
 
 const { value, lexErrors, parseErrors } = parseQueryString("eq(id, 1)", user)
