@@ -34,6 +34,3 @@ export const parseQueryString = (text, type) => {
     parseErrors: parser.errors,
   };
 };
-
-const abc = parseQueryString("and(eq(id, 1), eq(id, 2), eq(id, 3), eq(id, 4))", { id: "number" });
-console.log(abc)
