@@ -1,6 +1,6 @@
 import { Lexer } from "chevrotain";
-import { QueryParser } from "./parser";
-import { allTokens } from "./lexer";
+import { QueryParser } from "./parser.js";
+import { allTokens } from "./lexer.js";
 
 /**
  * @typedef {object} QueryResult
