@@ -1,5 +1,12 @@
 # drizzle-fqp
 
+## 0.0.4
+
+### Patch Changes
+
+- 91401b9: fix linting
+- 91401b9: move to jsdoc
+
 ## 0.0.3
 
 ### Patch Changes
