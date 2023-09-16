@@ -16,10 +16,16 @@ const lexer = new Lexer([...Object.values(allTokens)], {
 });
 
 /**
- * 
- * @param {string} text 
- * @param {object} type 
- * @returns {QueryResult}
+ * Parse a query string and return the corresponding drizzle filter function
+ * @description 
+ * This function is a wrapper around the parser and lexer that will return the 
+ * parsed value, lexing errors, and parsing errors
+ * @param {string} text - The query string to parse
+ * @param {object} type - Drizzle Model to use for the query
+ * @returns {QueryResult} - The parsed value, lexing errors, and parsing errors
+ * @example
+ * const { value, lexErrors, parseErrors } = parseQueryString("eq(id, 1)", user);
+ * console.log(value); // eq(user.id, 1)
  */
 export const parseQueryString = (text, type) => {
   const lexResult = lexer.tokenize(text);
