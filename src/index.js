@@ -2,12 +2,26 @@ import { Lexer } from "chevrotain";
 import { QueryParser } from "./parser";
 import { allTokens } from "./lexer";
 
+/**
+ * @typedef {object} QueryResult
+ * @property {any} value
+ * @property {import("chevrotain").ILexingError[]} lexErrors
+ * @property {import("chevrotain").IRecognitionException[]} parseErrors
+ */
+
 const parser = new QueryParser();
+
 const lexer = new Lexer([...Object.values(allTokens)], {
   ensureOptimizations: true,
 });
 
-export const parseQueryString = (text: string, type: object) => {
+/**
+ * 
+ * @param {string} text 
+ * @param {object} type 
+ * @returns {QueryResult}
+ */
+export const parseQueryString = (text, type) => {
   const lexResult = lexer.tokenize(text);
 
   parser.input = lexResult.tokens;
@@ -20,3 +34,6 @@ export const parseQueryString = (text: string, type: object) => {
     parseErrors: parser.errors,
   };
 };
+
+const data = parseQueryString("eq(id, 1)", { id: 1 })
+console.log(data)
