@@ -5,15 +5,17 @@
     "declaration": true,
     "declarationDir": "types",
     "declarationMap": true,
-    "emitDeclarationOnly": true,
     "noImplicitAny": true,
     "diagnostics": true,
     "noImplicitThis": true,
     "noEmitOnError": true,
+    "noEmit": true,
     "moduleResolution": "node",
-	"module": "ES2022",
-    "target": "es2020"
+    "module": "ES2022",
+    "target": "es2020",
+    "skipLibCheck": true,
+    "strict": true
   },
-  "include": ["index.js", "src/*.js"],
+  "include": ["src/*"],
   "exclude": ["node_modules"]
 }

@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "dts-buddy",
-    "lint": "tsc --noEmit",
+    "lint": "tsc",
     "release": "bun run build && changeset publish"
   },
   "license": "MIT",
