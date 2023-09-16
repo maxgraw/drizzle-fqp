@@ -1,107 +1,20 @@
-# devalue changelog
+# drizzle-fqp
 
-## 4.3.2
+## 0.0.3
 
-- Better type declarations ([#66](https://github.com/Rich-Harris/devalue/pull/66))
+### Patch Changes
 
-## 4.3.1
+- e297b37: switch to bun builder
 
-- Faster ([#65](https://github.com/Rich-Harris/devalue/pull/65))
+## 0.0.2
 
-## 4.3.0
+### Patch Changes
 
-- Support custom types ([#58](https://github.com/Rich-Harris/devalue/pull/58))
+- f219df8: switch to files inside package.json
+- 33b0a77: fix ci and stop ignoring build files for npm
 
-## 4.2.3
+## 0.0.1
 
-- Correctly escape control characters ([#57](https://github.com/Rich-Harris/devalue/pull/57))
+### Patch Changes
 
-## 4.2.2
-
-- Remove `pkg.main` ([#56](https://github.com/Rich-Harris/devalue/pull/56))
-
-## 4.2.1
-
-- Re-use internal helper ([#55](https://github.com/Rich-Harris/devalue/pull/55))
-
-## 4.2.0
-
-- Add `unflatten` ([#48](https://github.com/Rich-Harris/devalue/pull/48))
-
-## 4.1.0
-
-- Only deduplicate non-primitives ([#44](https://github.com/Rich-Harris/devalue/pull/44))
-- Error on invalid input ([#43](https://github.com/Rich-Harris/devalue/pull/43))
-- Fix `pkg.exports` ([#45](https://github.com/Rich-Harris/devalue/pull/45))
-
-## 4.0.1
-
-- Remove `devalue` export so that run time errors become build time errors
-
-## 4.0.0
-
-- Rename `devalue` function to `uneval`
-- Add `parse` and `stringify` functions
-
-## 3.1.3
-
-- Add `pkg.main`
-
-## 3.1.2
-
-- Include `pkg.types`
-
-## 3.1.1
-
-- Include `types` in `pkg.files`
-
-## 3.1.0
-
-- Include `path` in error object if value is unserializable
-
-## 3.0.1
-
-- Prevent duplicate parameter names ([#33](https://github.com/Rich-Harris/devalue/pull/33))
-
-## 3.0.0
-
-- Convert to ESM
-- Change `import devalue` to `import { devalue }`
-- Support `BigInt`
-
-## 2.0.1
-
-- Prevent regex XSS vulnerability in non-Node environments
-
-## 2.0.0
-
-- Change license to MIT
-
-## 1.1.1
-
-- Prevent object key XSS vulnerability ([#19](https://github.com/Rich-Harris/devalue/issues/19))
-
-## 1.1.0
-
-- Escape lone surrogates ([#13](https://github.com/Rich-Harris/devalue/issues/13))
-
-## 1.0.4
-
-- Smaller output ([#10](https://github.com/Rich-Harris/devalue/pull/10))
-
-## 1.0.3
-
-- Detect POJOs cross-realm ([#7](https://github.com/Rich-Harris/devalue/pull/7))
-- Error on symbolic keys ([#7](https://github.com/Rich-Harris/devalue/pull/7))
-
-## 1.0.2
-
-- Fix global name for UMD build
-
-## 1.0.1
-
-- XSS mitigation ([#1](https://github.com/Rich-Harris/devalue/issues/1))
-
-## 1.0.0
-
-- First release
+- 31d0f07: added typescript
