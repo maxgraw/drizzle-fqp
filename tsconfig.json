@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "diagnostics": true,
+    "noImplicitThis": true,
+    "noEmitOnError": true,
     "noEmit": true,
-    "strict": true,
-    "target": "es2020",
-    "module": "es2022",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "skipLibCheck": true
+    "module": "ES2022",
+    "target": "es2020",
+    "skipLibCheck": true,
+    "strict": true
   },
+  "include": ["src/*"],
   "exclude": ["node_modules"]
 }
