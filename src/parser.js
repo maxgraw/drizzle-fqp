@@ -1,5 +1,5 @@
 import { EmbeddedActionsParser } from "chevrotain";
-import { allTokens } from "./lexer";
+import { allTokens } from "./lexer.js";
 
 import { eq, and } from "drizzle-orm";
 
