@@ -1,7 +1,7 @@
 import { EmbeddedActionsParser } from "chevrotain";
 import { allTokens } from "./lexer";
 
-import { eq, and, SQL } from "drizzle-orm";
+import { eq, and } from "drizzle-orm";
 
 export class QueryParser extends EmbeddedActionsParser {
   constructor() {
@@ -31,7 +31,7 @@ export class QueryParser extends EmbeddedActionsParser {
 
   andStatement = this.RULE("andStatement", (type) => {
     /**
-     * @type {Array.<SQL<unknown> | undefined>}
+     * @type {Array.<import("drizzle-orm").SQL<unknown> | undefined>}
      */
     const items = [];
 
