@@ -1,15 +1,15 @@
 {
   "name": "drizzle-fqp",
   "version": "0.0.3",
-  "type": "module",
   "author": {
     "name": "Max Graw",
     "email": "github@maxgraw.com"
   },
+  "type": "module",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
-      "import": "./src/index.js",
       "default": "./src/index.js"
     }
   },
@@ -17,23 +17,24 @@
     "src",
     "types"
   ],
-  "types": "./types/index.d.ts",
   "dependencies": {
     "chevrotain": "^11.0.3",
     "drizzle-orm": "^0.28.6"
   },
   "devDependencies": {
-    "dts-buddy": "^0.2.0",
+    "dts-buddy": "^0.1.11",
     "typescript": "^5.0.0",
     "@changesets/cli": "^2.26.2"
   },
   "scripts": {
     "build": "dts-buddy",
     "lint": "tsc",
-    "release": "bun run build && changeset publish"
+    "release": "changeset publish",
+    "prepublishOnly": "dts-buddy"
   },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "pnpm@8.6.12"
 }
