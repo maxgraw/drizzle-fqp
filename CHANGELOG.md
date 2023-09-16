@@ -1,5 +1,11 @@
 # drizzle-fqp
 
+## 0.0.5
+
+### Patch Changes
+
+- 3051a5a: switch to pnpm
+
 ## 0.0.4
 
 ### Patch Changes
