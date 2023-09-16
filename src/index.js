@@ -23,6 +23,9 @@ const lexer = new Lexer([...Object.values(allTokens)], {
  * @param {string} text - The query string to parse
  * @param {object} type - Drizzle Model to use for the query
  * @returns {QueryResult} - The parsed value, lexing errors, and parsing errors
+ * @example
+ * const { value, lexErrors, parseErrors } = parseQueryString("eq(id, 1)", user);
+ * console.log(value); // eq(user.id, 1)
  */
 export const parseQueryString = (text, type) => {
   const lexResult = lexer.tokenize(text);
